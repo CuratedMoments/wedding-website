@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forever & Always - Wedding Planning</title>
+  <meta name="description" content="Forever & Always is a luxury wedding planning service creating elegant, timeless celebrations. Book your dream wedding today!">
+  <meta name="keywords" content="wedding planning, wedding services, luxury weddings, event coordination">
+  <meta name="author" content="Forever & Always Wedding Planning">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
@@ -46,13 +49,47 @@
     </div>
   </section>
 
+  <!-- Photo Gallery -->
+  <section class="p-8 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-pink-700 mb-6 text-center">Photo Gallery</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <img src="https://source.unsplash.com/600x400/?wedding" class="rounded shadow" alt="wedding 1">
+      <img src="https://source.unsplash.com/601x400/?bride" class="rounded shadow" alt="bride">
+      <img src="https://source.unsplash.com/602x400/?wedding-decor" class="rounded shadow" alt="decor">
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section class="bg-gray-100 p-8">
+    <h2 class="text-3xl font-bold text-pink-700 text-center mb-6">What Couples Say</h2>
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="bg-white p-6 rounded shadow">
+        <p class="italic">“Absolutely magical! The Forever & Always team made our dream wedding come true.”</p>
+        <p class="mt-4 font-semibold">– Priya & Arjun</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow mt-6">
+        <p class="italic">“Stress-free and stunning. Every detail was perfect!”</p>
+        <p class="mt-4 font-semibold">– Samantha & Vikram</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Feed (embed) -->
+  <section class="p-8 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-pink-700 text-center mb-6">Follow Us on Instagram</h2>
+    <div class="text-center">
+      <iframe src="https://snapwidget.com/embed/1013472" class="mx-auto" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; max-width:700px; height:500px"></iframe>
+      <p class="mt-4 text-pink-700"><a href="https://instagram.com" target="_blank">@foreverandalways_weddings</a></p>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section id="contact" class="p-8 max-w-3xl mx-auto">
     <h2 class="text-3xl font-bold text-pink-700 mb-4">Get In Touch</h2>
     <form class="space-y-4">
       <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded" required />
       <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded" required />
-      <textarea placeholder="Tell us about your wedding...." class="w-full p-3 border border-gray-300 rounded" rows="5"></textarea>
+      <textarea placeholder="Tell us about your wedding..." class="w-full p-3 border border-gray-300 rounded" rows="5"></textarea>
       <button type="submit" class="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-500">Send Message</button>
     </form>
   </section>
@@ -60,6 +97,11 @@
   <!-- Footer -->
   <footer class="bg-pink-100 text-center p-4 mt-8">
     <p>&copy; 2025 Forever & Always. All rights reserved.</p>
+    <div class="mt-2 flex justify-center space-x-4">
+      <a href="https://facebook.com" target="_blank" class="text-pink-700 hover:underline">Facebook</a>
+      <a href="https://instagram.com" target="_blank" class="text-pink-700 hover:underline">Instagram</a>
+      <a href="https://pinterest.com" target="_blank" class="text-pink-700 hover:underline">Pinterest</a>
+    </div>
   </footer>
 </body>
 </html>
