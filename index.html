@@ -7,6 +7,12 @@
   <meta name="description" content="Curated Moments is a luxury wedding planning service creating elegant, timeless celebrations. Book your dream wedding today!">
   <meta name="keywords" content="wedding planning, wedding services, luxury weddings, event coordination">
   <meta name="author" content="Curated Moments Wedding Planning">
+  <meta property="og:title" content="Curated Moments - Wedding Planning" />
+  <meta property="og:description" content="Elegant, timeless weddings crafted with love." />
+  <meta property="og:image" content="https://source.unsplash.com/600x400/?wedding" />
+  <meta property="og:url" content="https://curatedmoments.in" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
@@ -15,99 +21,54 @@
       font-family: 'Playfair Display', serif;
     }
   </style>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gradient-to-br from-white via-pink-50 to-pink-100 text-gray-800">
+  <!-- Floating WhatsApp Chatbot -->
+  <script>
+    window.onload = function() {
+      var options = {
+        whatsapp: "919876543210",
+        call_to_action: "Message us",
+        position: "right",
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function() { WhWidgetSendButton.init(host, proto, options); };
+      document.getElementsByTagName('head')[0].appendChild(s);
+    };
+  </script>
+
   <!-- Hero Section -->
-  <section class="bg-pink-100 min-h-screen flex flex-col justify-center items-center text-center p-8">
-    <h1 class="text-5xl font-bold text-pink-700">Curated Moments</h1>
-    <p class="mt-4 text-xl">Elegant. Timeless. Yours.</p>
-    <a href="#contact" class="mt-6 bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-500">Book a Consultation</a>
+  <section class="bg-pink-100 min-h-screen flex flex-col justify-center items-center text-center p-8 animate__animated animate__fadeIn">
+    <h1 class="text-5xl font-bold text-pink-700 animate__animated animate__fadeInDown">Curated Moments</h1>
+    <p class="mt-4 text-xl animate__animated animate__fadeInUp">Elegant. Timeless. Yours.</p>
+    <a href="#contact" class="mt-6 bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-500 transition animate__animated animate__zoomIn">Book a Consultation</a>
   </section>
 
   <!-- About Section -->
-  <section class="p-8 max-w-4xl mx-auto">
+  <section class="p-8 max-w-4xl mx-auto animate__animated animate__fadeInUp">
     <h2 class="text-3xl font-bold text-pink-700 mb-4">About Us</h2>
     <p>We specialize in curating unforgettable wedding experiences tailored uniquely to you. From intimate elopements to grand celebrations, our mission is to bring your love story to life with elegance and ease.</p>
   </section>
 
   <!-- Services -->
-  <section class="bg-gray-100 p-8">
+  <section class="bg-white p-8 animate__animated animate__fadeInUp">
     <h2 class="text-3xl font-bold text-pink-700 text-center mb-6">Our Services</h2>
     <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <div class="bg-white p-6 rounded shadow">
+      <div class="bg-gradient-to-r from-white to-pink-50 p-6 rounded-xl shadow hover:shadow-xl transition">
         <h3 class="font-semibold text-xl mb-2">Full Wedding Planning</h3>
         <p>Complete planning from start to finish – venue, vendors, decor & more.</p>
       </div>
-      <div class="bg-white p-6 rounded shadow">
+      <div class="bg-gradient-to-r from-white to-pink-50 p-6 rounded-xl shadow hover:shadow-xl transition">
         <h3 class="font-semibold text-xl mb-2">Day-Of Coordination</h3>
         <p>Relax and enjoy your day while we handle the logistics.</p>
       </div>
-      <div class="bg-white p-6 rounded shadow">
+      <div class="bg-gradient-to-r from-white to-pink-50 p-6 rounded-xl shadow hover:shadow-xl transition">
         <h3 class="font-semibold text-xl mb-2">Design & Styling</h3>
         <p>We create a cohesive, breathtaking aesthetic just for your celebration.</p>
       </div>
     </div>
   </section>
-
-  <!-- Photo Gallery -->
-  <section class="p-8 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-pink-700 mb-6 text-center">Photo Gallery</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <img src="https://source.unsplash.com/600x400/?wedding" class="rounded shadow" alt="wedding 1">
-      <img src="https://source.unsplash.com/601x400/?bride" class="rounded shadow" alt="bride">
-      <img src="https://source.unsplash.com/602x400/?wedding-decor" class="rounded shadow" alt="decor">
-    </div>
-  </section>
-
-  <!-- Testimonials Carousel -->
-  <section class="bg-gray-100 p-8">
-    <h2 class="text-3xl font-bold text-pink-700 text-center mb-6">What Couples Say</h2>
-    <div class="max-w-3xl mx-auto text-center">
-      <div class="bg-white p-6 rounded shadow">
-        <p class="italic">“Absolutely magical! The Curated Moments team made our dream wedding come true.”</p>
-        <p class="mt-4 font-semibold">– Priya & Arjun</p>
-      </div>
-      <div class="bg-white p-6 rounded shadow mt-6">
-        <p class="italic">“Stress-free and stunning. Every detail was perfect!”</p>
-        <p class="mt-4 font-semibold">– Samantha & Vikram</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Instagram Feed (embed) -->
-  <section class="p-8 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-pink-700 text-center mb-6">Follow Us on Instagram</h2>
-    <div class="text-center">
-      <iframe src="https://snapwidget.com/embed/1013472" class="mx-auto" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; max-width:700px; height:500px"></iframe>
-      <p class="mt-4 text-pink-700"><a href="https://instagram.com" target="_blank">@foreverandalways_weddings</a></p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="p-8 max-w-3xl mx-auto">
-    <h2 class="text-3xl font-bold text-pink-700 mb-4">Get In Touch</h2>
-    <form class="space-y-4">
-      <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded" required />
-      <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded" required />
-      <textarea placeholder="Tell us about your wedding..." class="w-full p-3 border border-gray-300 rounded" rows="5"></textarea>
-      <button type="submit" class="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-500">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-pink-100 text-center p-4 mt-8">
-    <p>&copy; 2025 Curated Moments. All rights reserved.</p>
-    <div class="mt-2 flex justify-center space-x-4">
-      <a href="https://facebook.com" target="_blank" class="text-pink-700 hover:underline">Facebook</a>
-      <a href="https://instagram.com" target="_blank" class="text-pink-700 hover:underline">Instagram</a>
-      <a href="https://pinterest.com" target="_blank" class="text-pink-700 hover:underline">Pinterest</a>
-    </div>
-    <p class="mt-2 text-sm text-gray-600">Website developed by <a href="https://chat.openai.com" target="_blank" class="underline">AI Wedding Tech</a></p>
-    <p class="mt-1 text-sm text-gray-500">Based in: <strong>India</strong></p>
-    <p class="text-sm text-gray-500">GST No.: <strong>29ABCDE1234F1Z5</strong></p>
-    <p class="text-sm text-gray-500">Business Email: <a href="mailto:info@curatedmoments.in" class="underline">info@foreverandalways.in</a></p>
-    <p class="text-sm text-gray-500">Phone/WhatsApp: <a href="tel:+919876543210" class="underline">+91-98765-43210</a></p>
-    <p class="mt-4 text-sm text-gray-700">Pan India Service | Personalized Wedding Planning | International Destination Weddings Available</p>
-  </footer>
 </body>
 </html>
